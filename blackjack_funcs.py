@@ -4,12 +4,14 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 
 def card_hand():
-    hand = [random.choice(cards), random.choice(cards)]
+    hand = [int(random.choice(cards)), int(random.choice(cards))]
     return hand
 
 
 def add_card(player_hand):
-    return player_hand.append(random.choice(cards))
+    player_hand.append(random.choice(cards))
+    return player_hand
+
 
 
 def card_counting(hand):

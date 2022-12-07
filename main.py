@@ -1,10 +1,17 @@
 import blackjack_funcs as bf
+from art import logo
+import os
+import time
 
 # Score count
 wins = 0
 
 # Play more games
 continue_game = True
+
+os.system("clear")
+print(logo)
+time.sleep(3)
 
 while continue_game:
     # Initializing to start game
@@ -116,6 +123,7 @@ while continue_game:
     continue_question = input("Play another game?\ny for yes, n for no: ").lower()
     if continue_question != "y" and continue_question != "yes":
         continue_game = False
+    os.system('clear')
 
 print("\nThank you for playing.")
 print(f"You won a total of {wins} times.")

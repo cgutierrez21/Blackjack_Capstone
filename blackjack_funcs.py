@@ -19,5 +19,4 @@ def card_counting(hand):
     card_total = 0
     for card in hand:
         card_total += card
-    print(card_total)
     return card_total
